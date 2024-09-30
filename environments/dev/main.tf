@@ -15,6 +15,6 @@
 module "deploy-dev" {
   source                 = "../../modules/deploy"
   project_id             = "dataplex-test-421212"
-  data_quality_spec_file = "rules"
+  data_quality_spec_file = "/rules/orders.dev.yaml"
   environment            = "dev"
 }
