@@ -14,7 +14,7 @@
 
 resource "google_dataplex_datascan" "dq_scan" {
   location     = var.region
-  data_scan_id = lower("${local.env}.${var.source_table}-scan")
+  data_scan_id = "${local.env}.${lower(var.source_table)}-scan"
   labels = {
     environment = local.env
   }
