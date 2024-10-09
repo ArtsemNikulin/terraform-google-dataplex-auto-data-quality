@@ -15,12 +15,12 @@
 samplingPercent: 100
 rowFilter:
 rules:
-#  - column: order_id
-#    dimension: COMPLETENESS
-#    name: non-null
-#    description: Sample rule for non-null column
-#    threshold: 1.0
-#    non_null_expectation: {}
+  - column: order_id
+    dimension: COMPLETENESS
+    name: non-null
+    description: Sample rule for non-null column
+    threshold: 1.0
+    non_null_expectation: {}
   - column: user_id
     dimension: COMPLETENESS
     name: non-null
